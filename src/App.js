@@ -32,22 +32,11 @@ function App() {
           title={e.title}
           amount={e.amount}
           date={e.date}
-          location={'Tata'}
-        ></ExpenseItem>
+          
+        />
       ))}
 
-      {/* <ExpenseItem
-        location={'Tata Motors'}
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      ></ExpenseItem>
-      <ExpenseItem
-      location={'Sony Television'}
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      ></ExpenseItem> */}
+      
     </div>
   );
 }
