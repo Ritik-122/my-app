@@ -17,17 +17,28 @@ const ExpenseForm = () => {
   let dateHandler = (e) => {
     setEnteredDate(e.target.value);
   };
+
+  let handleClick=(e)=>{
+    
+    console.log(e.target.title.value)
+    console.log(e.target.amount.value)
+    console.log(e.target.date.value);
+
+
+  }
+
+
   return (
-    <form>
+    <form onSubmit={handleClick}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
-          <input type="text" onChange={titleHandler} />
+          <input type="text" onChange={titleHandler} name='title' />
         </div>
 
         <div className="new-expense__control">
           <label>Amount</label>
-          <input type="number" onChange={amountHandler} />
+          <input type="number" onChange={amountHandler} name='amount'/>
         </div>
 
         <div className="new-expense__control">
@@ -37,6 +48,7 @@ const ExpenseForm = () => {
             min="2019-01-01"
             max="2023-12-31"
             onChange={dateHandler}
+            name='date'
           />
         </div>
       </div>
