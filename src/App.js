@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 
 const Dummy_Expenses= [
-    {
+    { 
       id: "e1",
       title: "Toilet Paper",
       amount: 94.12,
